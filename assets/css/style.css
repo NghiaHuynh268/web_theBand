@@ -1,0 +1,327 @@
+.main {
+  position: relative;
+}
+/* ..... */
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  z-index: 2;
+}
+.header .nav-bar {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+.header .opt {
+  padding: 15px 25px;
+  transition: all 0.3s;
+}
+.header .opt:hover {
+  background-color: rgb(185, 185, 185);
+}
+.header .opt > a {
+  font-size: 16px;
+  line-height: 26px;
+  color: white;
+  transition: all 0.3s;
+}
+.header .opt > a > img {
+  width: 20px;
+  height: 20px;
+  color: white;
+}
+.header .look-for {
+  padding: 20px 30px;
+  color: white;
+  transition: all 0.3s;
+}
+.header .look-for:hover {
+  cursor: pointer;
+  background-color: red;
+}
+.header .look-for .search {
+  width: 25px;
+  height: 25px;
+}
+.header .opt.more {
+  position: relative;
+}
+.header .opt.more:hover > a {
+  color: black;
+}
+.header .opt.more:hover .sub-nav {
+  display: block;
+}
+.header .sub-nav {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 150px;
+  display: none;
+  transition: all 0.3s;
+}
+.header .sub-opt {
+  font-size: 17px;
+  line-height: 27px;
+  padding: 10px 20px;
+  background-color: white;
+}
+.header .sub-opt:hover {
+  background-color: rgb(185, 185, 185);
+}
+.header .sub-opt > a {
+  color: black;
+}
+/* ..... */
+.slider {
+  margin-top: 58px;
+  padding-top: 50%;
+  background: url("/assets/images/pic1.jpg") top center / cover no-repeat;
+  position: relative;
+}
+.slider .text {
+  position: absolute;
+  bottom: 80px;
+  width: 100%;
+}
+.slider .text-title {
+  font-weight: 400;
+  font-size: 24px;
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.slider .text-description {
+  font-size: 15px;
+  color: white;
+  text-align: center;
+}
+/* ..... */
+.section {
+  padding: 64px 0;
+  margin: auto;
+}
+.title {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 40px;
+  letter-spacing: 4px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.slogan {
+  font-size: 17px;
+  line-height: 27px;
+  text-align: center;
+  font-style: italic;
+  opacity: 0.7;
+  margin-bottom: 20px;
+}
+/* ..... */
+.theband {
+  max-width: 800px;
+}
+.theband .theband-text {
+  font-size: 18px;
+  line-height: 28px;
+  text-align: justify;
+  margin-bottom: 30px;
+}
+.theband .theband-product {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.theband .product-name {
+  font-size: 18px;
+  line-height: 28px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.theband .product-img {
+  width: 154px;
+}
+/* ..... */
+.tourdates {
+  background-color: black;
+}
+.tourdates .tourdates-title,
+.tourdates .tourdates-slogan {
+  color: white;
+}
+.tourdates .month-picker {
+  margin-bottom: 32px;
+}
+.tourdates .month-picker > li {
+  max-width: 800px;
+  padding: 8px 16px;
+  background-color: white;
+  border-bottom: 1px solid black;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.tourdates .sold-out {
+  position: absolute;
+  padding: 5px 10px;
+  background-color: red;
+  color: white;
+  left: 100px;
+}
+.tourdates .available {
+  position: absolute;
+  right: 30px;
+  padding: 5px 10px;
+  border-radius: 50%;
+  background-color: black;
+  color: white;
+}
+.tourdates .places-list {
+  max-width: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+}
+.tourdates .place {
+  max-width: 245px;
+  background-color: white;
+  padding-bottom: 15px;
+}
+.tourdates .place > img {
+  width: 100%;
+  margin-bottom: 15px;
+}
+.tourdates .name {
+  padding: 0 16px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  margin-bottom: 10px;
+}
+.tourdates .date {
+  padding: 0 16px;
+  font-size: 18px;
+  line-height: 28px;
+  opacity: 0.7;
+  margin-bottom: 10px;
+}
+.tourdates .description {
+  padding: 0 16px;
+  font-size: 17px;
+  line-height: 27px;
+  margin-bottom: 10px;
+}
+.tourdates .buy {
+  padding: 8px 13px;
+  background-color: black;
+  color: white;
+  font-size: 17px;
+  line-height: 27px;
+  margin-left: 16px;
+  transition: all 0.3s;
+}
+.tourdates .buy:hover {
+  cursor: pointer;
+  background-color: rgb(185, 185, 185);
+}
+/* ..... */
+.contact {
+  max-width: 800px;
+}
+.contact .contact-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.contact .contact-method {
+  width: 50%;
+}
+.contact .location-group,
+.contact .phone-group,
+.contact .mail-group {
+  display: flex;
+  align-items: center;
+}
+.contact .location,
+.contact .phone,
+.contact .mail {
+  font-size: 18px;
+  line-height: 28px;
+  margin-left: 20px;
+}
+.contact .information {
+  max-width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.contact .name-input,
+.contact .mail-input,
+.contact .message-input {
+  padding: 5px 10px;
+  border: 1px solid #7d7d7d;
+  font-size: 17px;
+  line-height: 27px;
+}
+.contact .name-input {
+  width: 48%;
+  margin-right: 4%;
+}
+.contact .mail-input {
+  width: 48%;
+}
+.contact .message-input {
+  width: 100%;
+  margin-top: 10px;
+}
+.contact .send {
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  font-size: 15px;
+  line-height: 25px;
+  transition: all 0.3s;
+}
+.contact .button {
+  text-align: right;
+}
+.contact .send:hover {
+  cursor: pointer;
+  background-color: #7d7d7d;
+}
+/* ..... */
+.map > img {
+  width: 100%;
+}
+/* .....  */
+.footer {
+  padding-bottom: 80px;
+  text-align: center;
+}
+.footer .social-list {
+  margin-bottom: 10px;
+}
+.footer .social {
+  font-size: 22px;
+  margin-right: 5px;
+  color: #7d7d7d;
+  transition: all 0.3s;
+}
+.footer .social:hover {
+  cursor: pointer;
+  color: black;
+}
+.footer .link {
+  font-size: 18px;
+  opacity: 0.8;
+}
+.footer .link > a {
+  color: black;
+  opacity: 0.8;
+}
